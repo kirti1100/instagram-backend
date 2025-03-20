@@ -44,6 +44,7 @@ public class PostController {
     public List<Post> getmypost(HttpServletRequest request){
     	System.out.println("controller"+"request: "+request.getUserPrincipal().getName()+"response: ");
     	List<Post> mypost = postservice.getmypost(request.getUserPrincipal().getName());
+    	System.out.println("mypostcontroller"+mypost);
     	return mypost;
     }
     

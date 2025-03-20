@@ -88,6 +88,7 @@ public class PostServiceImpl implements PostService {
 				posts.add(postobject);
 
 			});
+			System.out.println("mypostreturning"+posts);
 			return posts;
 			
 		}
